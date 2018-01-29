@@ -1,4 +1,5 @@
 import React from 'react';
+import './PictureList.css';
 import Picture from '../Picture/Picture.js';
 
 class PictureList extends React.Component {
@@ -7,9 +8,8 @@ class PictureList extends React.Component {
     return (
       <div className='PictureList'>
         {
-          this.props.handlePictures.map(picture => {
-            return <Picture handlePictures={picture} />;
-          })
+           <Picture handlePicture={this.props.handlePictures} onAdd={this.props.onAdd} onRemove={this.props.onRemove} isRemoval={this.props.isRemoval}/>
+
         }
       </div>
     );

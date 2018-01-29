@@ -28,7 +28,7 @@
   line-height: 1rem;
 }
 
-.Picture-name {
+.Picture-address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

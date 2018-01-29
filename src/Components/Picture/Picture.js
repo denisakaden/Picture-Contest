@@ -2,21 +2,41 @@ import React from 'react';
 import './Picture.css';
 
 class Picture extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.renderClick = this.renderClick.bind(this);
+
+  }
+
+  renderClick() {
+    if (this.props.isRemoval) {
+      return (<button className="Picture-action" onClick={this.props.onAdd}>Vote</button>)
+    } else {
+      return (<button className="Picture-action" onClick={this.props.onRemove}>Unvote</button>)
+    }
+  }
+
+
   render() {
     return (
       <div className="Picture">
         <div className="image-container">
-          <img src={this.props.handlePictures.imageUrl} alt=''/>
+          <img src={this.props.handlePicture.imageUrl} alt=''/>
         </div>
-        <h2>{this.props.handlePictures.pictureTitle}</h2>
+        <h2>{this.props.handlePicture.pictureTitle}</h2>
         <div className="Picture-information">
           <div className="Picture-address">
-            <p>{this.props.handlePictures.name}</p>
-              <p>{this.props.handlePictures.phoneNumber} {this.props.handlePictures.misrad}</p>
+            <p>{this.props.handlePicture.name}</p>
+              <p>{this.props.handlePicture.phoneNumber} {this.props.handlePicture.misrad}</p>
           </div>
-            <h3 className="rating">{this.props.handlePictures.rating} upvotes</h3>
-            <p>{this.props.handlePictures.reviewCount} reviews</p>
+          <div className="Picture-reviews">
+            <h3 className="rating">{this.props.handlePicture.rating} upvotes</h3>
+
+          </div>
+          {this.renderClick()}
         </div>
+
       </div>
     );
   }
