@@ -21,12 +21,14 @@ class Picture extends React.Component {
   render() {
     return (
       <div className="Picture">
+        <p>{this.props.handlePicture.Category}</p>
         <div className="image-container">
           <img src={this.props.handlePicture.imageUrl} alt=''/>
         </div>
         <h2>{this.props.handlePicture.pictureTitle}</h2>
         <div className="Picture-information">
           <div className="Picture-address">
+
             <p>{this.props.handlePicture.name}</p>
               <p>{this.props.handlePicture.phoneNumber} {this.props.handlePicture.misrad}</p>
           </div>
