@@ -1,0 +1,13 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.Home {
+  background-image: url('./Samsung_Galaxy_Note_8_Desktop_Wallpaper_medium.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}

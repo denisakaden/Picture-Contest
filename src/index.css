@@ -1,5 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: sans-serif;
+}
+
+.Home {
+  background-image: url('./Wallpaper.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
 }

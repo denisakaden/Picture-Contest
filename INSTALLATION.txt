@@ -1,4 +1,9 @@
 1) Download node.js from:    https://nodejs.org/en/download/
 2) Download and install Git Bash on windows    http://gitforwindows.org/
 3) Open Git Bash and write:  npm install -g create-react-app
-                             npm install react-router-dom ( or inside your project path:  npm isntall react-router-dom --save)
+                             npm install react-router-dom ( or inside your project path:  npm install react-router-dom --save)
+4)npm install -g firebase-tools
+5)Inside your project path: firebase login --interactive
+6)firebase init
+7)firebase serve
+8)firebase deploy
